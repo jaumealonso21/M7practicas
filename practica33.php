@@ -14,14 +14,15 @@
 <body>
 <h1>Conversión euros/pesetas</h1>
 <table>
-	<tr><th>Euros</th><th>Pesetas</th></tr>
+  <tr><th>Euros</th><th>Pesetas</th></tr>
     <?PHP
       define ("CONV", 166.386);
       $i = 1;
       $fi = 10;
   
-      for($i; $i <= $fi; $i++)
-      print "<tr><td>".$i."</td><td>".$i*CONV."</td></tr>\n";
+      for($i; $i <= $fi; $i++){
+        print "<tr><td>".$i."</td><td>".$i*CONV."</td></tr>\n";
+      }
     ?>
 </table>
 </body>

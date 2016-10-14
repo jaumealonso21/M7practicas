@@ -1,3 +1,4 @@
+<?php include 'funciones.php'; ?>
 <!doctype html>
 <html lang="es">
 <head>
@@ -6,10 +7,6 @@
 </head>
 <body>
 <h1>Página de bienvenida</h1>
-<span><?php
-$d = $_SERVER['REQUEST_TIME'];
-print ("$d");
-
-?></span>
+<span><?php echo hora(); ?></span>
 </body>
 </html> 
